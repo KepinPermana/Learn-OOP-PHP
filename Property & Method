@@ -1,0 +1,54 @@
+<?php 
+
+// studi kasus 
+// Jualan Produk
+// Game
+// Komik
+
+
+
+class Produk {
+
+		// property atau bisa juga di sebut data, sebuah classs bisa di isi dengan property
+
+	// sebuah property harus di awali dengan visisbility 
+
+	public $judul = "Naruto", $penerbit= "Gramedia", $penulis="Kishimoto", $harga=200000 ; // contoh mendefinisikan nilai property default
+
+
+	// method adalah function di dalam class
+
+	public function GetAll (){
+
+			return "$this->judul, $this->penulis"; // $this adalah di tambahkan jika kita menulis funciton di dalam variable
+
+	}
+
+}
+
+// $produk1 = new Produk ();
+// $produk1->judul="Doraemon";
+// var_dump($produk1);
+
+// echo "<br>";
+
+// // cara mendefinisikan nilai property yang ke 2
+// $produk2 = new Produk ();
+// $produk2->penulis="Kepin";
+// var_dump($produk2->penulis);
+
+$produk3 = new Produk ();
+$produk3->judul = "Naruto";
+$produk3->penerbit="Shonen Jump";
+$produk3->penulis="Masashi Kashimoto";
+$produk3->harga=70000;
+
+echo "Komik : $produk3->judul, $produk3->penulis";
+
+echo "<br>";
+
+echo "Komik : " . $produk3->GetAll();
+
+
+
+
